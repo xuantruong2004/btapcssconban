@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.btn--success {
+  background: linear-gradient(to right, #67ecad, #4fccc7);
+  box-shadow: 0 0 10px #55d4c0;
+}
+.btn--information {
+  background: linear-gradient(to right, #ace4ff, #70b5ed);
+  box-shadow: 0 0 10px #55d4c0;
+}
+.btn--buynow {
+  background: linear-gradient(to right, #afbefe, #ad89f0);
+  box-shadow: 0 0 10px #55d4c0;
+}
+.btn--warning {
+  background: linear-gradient(to right, #fed598, #fca260);
+  box-shadow: 0 0 10px #55d4c0;
+}
+.btn--contact {
+  background: linear-gradient(to right, #febeac, #ee7774);
+  box-shadow: 0 0 10px #55d4c0;
+}
+.btn--delete {
+  background: linear-gradient(to right, #ffa8b5, #f5869d);
+  box-shadow: 0 0 10px #55d4c0;
+}
+.color__item {
+  width: 100px;
+  height: 150px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  box-shadow: 0 0 5px #af0606;
+  transition: background-color 0.3s ease;
+}
+
+.color__item:first-child {
+  background-color: #a24bf0;
+}
+.color__item:nth-child(2) {
+  background-color: #38dbb2;
+}
+.color__item:nth-last-child(2) {
+  background-color: #000000;
+}
+.color__item:last-child {
+  background-color: #dd44a7;
+}
+.color__item:nth-child(3) {
+  background-color: #ea344f;
+}
+.color__item:not(:last-child) {
+  background-color: #a24bf0;
+}
+.color__item:not(:last-child):hover {
+  background-color: #f04b6f;
+}
+.color__item:hover {
+  background-color: rgb(201, 151, 13);
+  cursor: pointer;
+}
+div[data-link^="https"] {
+  color: #af0606;
+}
+div[data-link$="vn"] {
+  color: #ea344f;
+}
+div[data-name*="hello"] {
+  background-color: rgb(80, 24, 236);
+  color: #af0606;
+  opacity: 0.6;
+}
+div[data-name="hello"] {
+  color: blue;
+}
+input[type="email"] {
+  background-color: #38dbb2;
+  width: 200px;
+}
+input[name="fullname"] {
+  background-color: #af0606;
+}
