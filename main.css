@@ -17,7 +17,10 @@ body {
   border-radius: 10px;
   margin: 10px 10px;
 }
-
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
 .btn--success {
   background: linear-gradient(to right, #67ecad, #4fccc7);
   box-shadow: 0 0 10px #55d4c0;
